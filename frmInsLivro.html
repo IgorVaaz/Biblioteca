@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserir Livro</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Formulário Inserir Livro</h1>
+        <form id="frmInsLivro" name="frmInsLivro" method="POST" action="insLivro.php">
+            <div class="container">
+            <div class="form-group">
+                <label for="lblTitulo">Titulo: </label>
+                <input type="text" class="form-control" id="txtTitulo" name="txtTitulo" placeholder="informe o Titulo"> 
+            </div>
+            <div class="form-group">
+                <label for="lblAutor">Autor:</label>
+                <input type="text" class="form-control" id="txtAutor" name="txtAutor" placeholder="informe o Autor" > 
+            </div>
+            <div class="form-group">
+                <label for="lblEditora">Editora:</label>
+                <input type="text" class="form-control" id="txtEditora" name="txtEditora" placeholder="informe a Editora" > 
+            </div>
+            <input type="submit" id="bt_Gravar" name="bt_Gravar" class="btn btn-success"  value="Salvar">
+            <input type="reset" id="bt_Limpar" name="bt_Limpar" class="btn btn-primary" value="Limpar">
+            <input type="button" id="bt_Cancelar" name="bt_Cancelar" class="btn btn-danger" value="Voltar"
+              onclick="javascript:location.href='lstLivro.php'">
+            </div>
+        </form>
+    </body>
+</html>

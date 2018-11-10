@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Inserir Aluno</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    </head>
+    <body>
+        <h1>Formulário Inserir Aluno</h1>
+        <form id="frmInsProd" name="frmInsAluno" method="POST" action="insAluno.php">
+            <div class="container">
+            <div class="form-group">
+                <label for="lbldesc">Nome: </label>
+                <input type="text" class="form-control" id="txtNome" name="txtNome" placeholder="informe o Nome"> 
+            </div>
+            <div class="form-group">
+                <label for="lblQtde">Curso:</label>
+                <input type="text" class="form-control" id="txtCurso" name="txtCurso" placeholder="informe o Curso" > 
+            </div>
+            <div class="form-group">
+                <label for="lblValor">E-mail:</label>
+                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="informe o E-mail" > 
+            </div>
+            <div class="form-group">
+                <label for="lblValor">Telefone:</label>
+                <input type="text" class="form-control" id="txtTel" name="txtTel" placeholder="informe o Telefone" > 
+            </div>
+            <input type="submit" id="bt_Gravar" name="bt_Gravar" class="btn btn-success"  value="Salvar">
+            <input type="reset" id="bt_Limpar" name="bt_Limpar" class="btn btn-primary" value="Limpar">
+            <input type="button" id="bt_Cancelar" name="bt_Cancelar" class="btn btn-danger" value="Voltar"
+              onclick="javascript:location.href='lstAluno.php'">
+            </div>
+        </form>
+    </body>
+</html>
